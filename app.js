@@ -23,5 +23,21 @@ var generatedPassValue = password;
 //function for copy
 function copyPassword() {
     password.select();
-    document.execCommand("copy")
+    document.execCommand("copy");
+    if (generatedPassValue.value === "") {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please generate password!",
+        });
+    } else {
+        Swal.fire({
+            position: "middle",
+            icon: "success",
+            title: "Password Copied",
+            showConfirmButton: false,
+            timer: 1500
+        });
+    }
+
 }
