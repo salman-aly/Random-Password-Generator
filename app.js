@@ -1,3 +1,4 @@
+//function for creating random password
 function genePassword() {
     var pass = document.getElementById("password");
     var password = "";
@@ -13,4 +14,14 @@ function genePassword() {
         password += all[randomPassword]
     }
     pass.value = password;
+}
+
+
+//get the generated random password value
+var generatedPassValue = password;
+
+//function for copy
+function copyPassword() {
+    password.select();
+    document.execCommand("copy")
 }

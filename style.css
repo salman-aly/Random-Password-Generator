@@ -33,7 +33,7 @@
 }
 
 .genereter h3{
-    font-size: 28px;
+    font-size: 32px;
     padding-bottom: 20px;
 }
 
@@ -42,13 +42,13 @@
 }
 
 .genereter button {
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     width: 120px !important;
     border: none;
     border-radius: 5px;
     background-color: #7601CD;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
 }
 
