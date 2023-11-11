@@ -28,7 +28,7 @@ function copyPassword() {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Please generate password!",
+            text: "Please Generate Password!",
         });
     } else {
         Swal.fire({
