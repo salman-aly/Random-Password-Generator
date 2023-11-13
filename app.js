@@ -60,9 +60,9 @@ var generatedPassValue = pass.value;
 function passwordCheck() {
     for (var i = 0; i < all.length; i++) {
         if (validation.value !== pass.value) {
-            console.log("w")
+            console.log("Weak Password!")
         } else {
-            console.log("s")
+            console.log("Strong password!")
         }
     }
 }
