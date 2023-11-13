@@ -18,25 +18,6 @@ function genePassword() {
 
 //validation for weak password
 var validation = document.getElementById("validation");
-//all variables in one
-var getAll = all;
-
-
-
-//get the generated random password value
-var generatedPassValue = pass.value;
-
-function passwordcheck() {
-    for (var i = 0; i > getAll.length; i++) {
-        if (validation.value !== getAll[i]) {
-            alert("weak pass")
-        } else {
-            alert("Strong pass")
-        }
-    }
-    console.log(validation.value)
-}
-
 try {
     function copyPassword() {
         var passwordInput = document.getElementById("password");
@@ -60,7 +41,7 @@ try {
                     });
                 })
                 .catch((error) => {
-                    console.error("Error copying password:", error);
+                    console.error(error);
                     Swal.fire({
                         icon: "error",
                         title: "Oops...",
@@ -73,4 +54,16 @@ try {
     console.log(error);
 }
 
+//get the generated random password value
+var generatedPassValue = pass.value;
+
+function passwordCheck() {
+    for (var i = 0; i < all.length; i++) {
+        if (validation.value !== pass.value) {
+            console.log("w")
+        } else {
+            console.log("s")
+        }
+    }
+}
 
