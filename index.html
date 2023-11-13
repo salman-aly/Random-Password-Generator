@@ -10,15 +10,24 @@
     <div class="main">
       <div class="genereter">
         <h3>Random Password <span>Generator</span></h3>
+        <label for="">
+          <input
+            type="text"
+            id="password"
+            placeholder="Password"
+            style="width: 300px"
+            disabled />
+        </label>
         <input
           type="text"
-          id="password"
-          placeholder="Password"
-          style="width: 300px" disabled />
+          id="validation"
+          placeholder="Password validation check"
+          style="width: 300px" />
         <div class="btn">
           <button onclick="genePassword()">Generate</button>
           <button onclick="copyPassword()">Copy</button>
         </div>
+        <button onclick="passwordcheck()" style="margin-top: 5px">Check</button>
       </div>
     </div>
 
