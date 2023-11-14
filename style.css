@@ -23,7 +23,7 @@
     margin-bottom: 10px;
 }
 
-.genereter{
+.genereter {
     width: 350px;
     background-color: #fff;
     height: 300px;
@@ -33,19 +33,29 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.genereter h3{
+.genereter h3 {
     font-size: 32px;
     padding-bottom: 20px;
 }
 
-.genereter h3 span{
+.genereter h3 span {
     color: #7601CD;
 }
 
-.genereter button {
+.checkBtn {
     font-size: 18px;
     color: #fff;
-    width: 120px !important;
+    width: 300px !important;
+    border: none;
+    border-radius: 5px;
+    background-color: #7601CD;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-s-w{
+    font-size: 18px;
+    color: #fff;
+    width: 140px !important;
     border: none;
     border-radius: 5px;
     background-color: #7601CD;
@@ -53,15 +63,15 @@
     cursor: pointer;
 }
 
-.genereter button:hover{
+.genereter button:hover {
     background-color: #8D79F4;
     transition: 0.3s ease-in-out;
 }
 
-.genereter .btn{
+.genereter .btn {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 15px;
 }
 

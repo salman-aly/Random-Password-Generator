@@ -13,6 +13,8 @@ function genePassword() {
         password += all[randomPassword]
     }
     pass.value = password;
+
+    password = "";
 }
 
 
@@ -51,7 +53,7 @@ try {
         }
     }
 } catch (error) {
-    console.log(error);
+    // console.log(error);
 }
 
 //get the generated random password value
@@ -60,9 +62,19 @@ var generatedPassValue = pass.value;
 function passwordCheck() {
     for (var i = 0; i < all.length; i++) {
         if (validation.value !== pass.value) {
-            console.log("Weak Password!")
+            // console.log("Weak Password!")
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Weak Password!",
+            });
         } else {
-            console.log("Strong password!")
+            // console.log("Strong password!")
+            Swal.fire({
+                icon: "success",
+                title: "Great...",
+                text: "Strong Password!",
+            });
         }
     }
 }
