@@ -52,6 +52,13 @@
     padding: 10px;
     cursor: pointer;
 }
+
+.hidden{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 15px;
+}
+
 .btn-s-w{
     font-size: 18px;
     color: #fff;

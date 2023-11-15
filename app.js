@@ -79,3 +79,16 @@ function passwordCheck() {
     }
 }
 
+
+
+//show password and hide
+
+function showPassword() {
+    var display = document.getElementById("validation");
+
+    if (display.type === "password") {
+        display.type = "text";
+    } else {
+        display.type = "password"
+    }
+}

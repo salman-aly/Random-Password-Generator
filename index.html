@@ -23,14 +23,21 @@
           id="validation"
           placeholder="Password validation check"
           style="width: 300px" />
+        <box-icon class="hidden" type="solid" name="low-vision" id="hide" onclick="showPassword()"></box-icon>
         <div class="btn">
           <button class="btn-s-w" onclick="genePassword()">Generate</button>
           <button class="btn-s-w" onclick="copyPassword()">Copy</button>
         </div>
-        <button class="checkBtn" onclick="passwordCheck()" style="margin-top: 5px">Check</button>
+        <button
+          class="checkBtn"
+          onclick="passwordCheck()"
+          style="margin-top: 5px">
+          Check
+        </button>
       </div>
     </div>
 
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
   </body>
